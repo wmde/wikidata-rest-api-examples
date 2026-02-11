@@ -1,0 +1,16 @@
+meta {
+  name: GET-aliases
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://www.wikidata.org/w/rest.php/wikibase/v1/entities/items/Q42/aliases
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
