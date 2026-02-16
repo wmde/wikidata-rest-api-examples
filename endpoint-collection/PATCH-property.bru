@@ -1,0 +1,35 @@
+meta {
+  name: PATCH-property
+  type: http
+  seq: 16
+}
+
+patch {
+  url: https://83140a6db8.catalyst.wmcloud.org/w/rest.php/wikibase/v1/entities/properties/P1
+  body: json
+  auth: inherit
+}
+
+headers {
+  Cookie: wiki_83140a6db8__mainUserName=Patch%20Demo; wiki_83140a6db8__main_session=lkc5910g3o59htrmn9e510u45f8nuucl; wiki_83140a6db8__mainUserID=2
+}
+
+body:json {
+  {
+    "patch": [
+      {
+        "op": "add",
+        "path": "/aliases/en/-",
+        "value": "is an"
+      }
+    ],
+    "tags": [],
+    "bot": false,
+    "comment": "add 'is an' as an English alias"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
