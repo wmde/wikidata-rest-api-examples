@@ -1,0 +1,47 @@
+meta {
+  name: PATCH-statement
+  type: http
+  seq: 20
+}
+
+patch {
+  url: https://83140a6db8.catalyst.wmcloud.org/w/rest.php/wikibase/v1/entities/items/Q5/statements/Q5$3bb28b9a-4aaa-3d6c-8ac4-d78de114f3f9
+  body: json
+  auth: inherit
+}
+
+headers {
+  Cookie: wiki_83140a6db8__mainUserName=Patch%20Demo; wiki_83140a6db8__main_session=jh94omvdpdbj16meih16magulkruf7ud; wiki_83140a6db8__mainUserID=2; wiki_83140a6db8__mainToken=62a0b212cb537102434ddfb9176fdde8; cpPosIndex=1%401771325885%23f947da77b15042931f2be8923b0781a1; UseDC=master
+}
+
+body:json {
+  {
+    "patch": [
+      {
+        "op": "add",
+        "path": "/references/-",
+        "value": {
+          "parts": [
+            {
+              "property": {
+                "id": "P5"
+              },
+              "value": {
+                "type": "value",
+                "content": "Q7"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "tags": [],
+    "bot": false,
+    "comment": "Add reference to Statement"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
