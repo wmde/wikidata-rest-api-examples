@@ -1,10 +1,10 @@
 meta {
-  name: PUT-pdc-label
+  name: DELETE-label
   type: http
-  seq: 4
+  seq: 18
 }
 
-put {
+delete {
   url: https://www.wikidata.org/w/rest.php/wikibase/v1/entities/items/Q4115189/labels/pdc
   body: json
   auth: inherit
@@ -12,10 +12,9 @@ put {
 
 body:json {
   {
-    "label": "Wikidata Sandkaschde",
     "tags": [],
     "bot": false,
-    "comment": "Add a Pennsylvania Dutch label"
+    "comment": "Delete label"
   }
 }
 

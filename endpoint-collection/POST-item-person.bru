@@ -1,0 +1,30 @@
+meta {
+  name: POST-item-person
+  type: http
+  seq: 11
+}
+
+post {
+  url: https://83140a6db8.catalyst.wmcloud.org/w/rest.php/wikibase/v1/entities/items
+  body: json
+  auth: inherit
+}
+
+headers {
+  Cookie: wiki_83140a6db8__mainUserName=Patch%20Demo; wiki_83140a6db8__main_session=ag0fftuehmhvbk1hhurnenb40kdjr2je; wiki_83140a6db8__mainUserID=2
+}
+
+body:json {
+  {
+    "item": {
+      "labels": {
+        "en": "Benjamin Franklin"
+      }
+    }
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
