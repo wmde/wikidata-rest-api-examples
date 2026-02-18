@@ -1,0 +1,16 @@
+meta {
+  name: GET-item-scotland
+  type: http
+  seq: 28
+}
+
+get {
+  url: https://www.wikidata.org/w/rest.php/wikibase/v1/entities/items/Q22
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
