@@ -1,0 +1,16 @@
+meta {
+  name: read-aliases-of-item
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{base-url}}/entities/items/{{item-id}}/aliases
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,47 @@
+meta {
+  name: add-reference-to-statement-of-item
+  type: http
+  seq: 28
+}
+
+patch {
+  url: https://83140a6db8.catalyst.wmcloud.org/w/rest.php/wikibase/v1/entities/items/Q4/statements/Q4$9703ea3f-4789-e813-07a5-15515bb425d5
+  body: json
+  auth: inherit
+}
+
+headers {
+  Cookie: wiki_83140a6db8__mainUserName=Patch%20Demo; wiki_83140a6db8__mainUserID=2; wiki_83140a6db8__mainToken=62a0b212cb537102434ddfb9176fdde8; wiki_83140a6db8__main_session=q1nlch6ig31uqvbskjhc6qc1fijuoti3
+}
+
+body:json {
+  {
+    "patch": [
+      {
+        "op": "add",
+        "path": "/references/-",
+        "value": {
+          "parts": [
+            {
+              "property": {
+                "id": "P5"
+              },
+              "value": {
+                "type": "value",
+                "content": "Q7"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "tags": [],
+    "bot": false,
+    "comment": "Add reference to Statement"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

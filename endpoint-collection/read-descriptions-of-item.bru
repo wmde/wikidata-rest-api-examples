@@ -1,0 +1,16 @@
+meta {
+  name: read-descriptions-of-item
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://www.wikidata.org/w/rest.php/wikibase/v1/entities/items/Q213959/descriptions
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,68 @@
+meta {
+  name: add-qualifier-and-reference-to-item-statement
+  type: http
+  seq: 4
+}
+
+put {
+  url: https://www.wikidata.org/w/rest.php/wikibase/v1/entities/items/Q4115189/statements/Q4115189$A5A7D65B-E118-48AA-8D3E-F82476E75501
+  body: json
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "statement": {
+      "property": {
+        "id": "P54"
+      },
+      "value": {
+        "type": "value",
+        "content": "Q213959"
+      },
+      "qualifiers": [
+        {
+          "property": {
+            "id": "P580"
+          },
+          "value": {
+            "type": "value",
+            "content": {
+              "time": "+1901-01-01T00:00:00Z",
+              "precision": 11,
+              "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+          }
+        }
+      ],
+      "references": [
+        {
+          "parts": [
+            {
+              "property": {
+                "id": "P854"
+              },
+              "value": {
+                "type": "value",
+                "content": "https://www.overthemonster.com"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "tags": [],
+    "bot": false,
+    "comment": "Add qualifier and reference to Statement via REST API"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

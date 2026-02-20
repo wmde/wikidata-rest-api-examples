@@ -1,0 +1,25 @@
+meta {
+  name: add-english-label-to-item
+  type: http
+  seq: 3
+}
+
+put {
+  url: https://www.wikidata.org/w/rest.php/wikibase/v1/entities/items/Q4115189/labels/pdc
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "label": "Wikidata Sandkaschde",
+    "tags": [],
+    "bot": false,
+    "comment": "Add a Pennsylvania Dutch label"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

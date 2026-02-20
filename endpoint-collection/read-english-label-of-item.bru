@@ -1,0 +1,16 @@
+meta {
+  name: read-english-label-of-item
+  type: http
+  seq: 5
+}
+
+get {
+  url: https://www.wikidata.org/w/rest.php/wikibase/v1/entities/items/Q22/labels/en
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
