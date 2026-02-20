@@ -1,0 +1,39 @@
+meta {
+  name: POST-property-reference-URL
+  type: http
+  seq: 4
+}
+
+post {
+  url: https://83140a6db8.catalyst.wmcloud.org/w/rest.php/wikibase/v1/entities/properties
+  body: json
+  auth: inherit
+}
+
+headers {
+  Cookie: wiki_83140a6db8__mainUserName=Patch%20Demo; wiki_83140a6db8__main_session=jh94omvdpdbj16meih16magulkruf7ud; wiki_83140a6db8__mainUserID=2; wiki_83140a6db8__mainToken=62a0b212cb537102434ddfb9176fdde8; cpPosIndex=1%401771325885%23f947da77b15042931f2be8923b0781a1; UseDC=master
+}
+
+body:json {
+  {
+    "property": {
+      "data_type": "wikibase-item",
+      "labels": {
+        "en": "reference URL"
+      },
+      "descriptions": {
+        "en": "should be used for Internet URLs as references"
+      },
+      "aliases": {
+        "en": [
+          "website"
+        ]
+      }
+    }
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

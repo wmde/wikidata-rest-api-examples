@@ -1,0 +1,30 @@
+meta {
+  name: POST-item-printer
+  type: http
+  seq: 15
+}
+
+post {
+  url: https://83140a6db8.catalyst.wmcloud.org/w/rest.php/wikibase/v1/entities/items
+  body: json
+  auth: inherit
+}
+
+headers {
+  Cookie: wiki_83140a6db8__mainUserName=Patch%20Demo; wiki_83140a6db8__main_session=e0prbsf0s3bkjgsue1imeflbion5n6or; wiki_83140a6db8__mainUserID=2
+}
+
+body:json {
+  {
+    "item": {
+      "labels": {
+        "en": "printer"
+      }
+    }
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
