@@ -5,17 +5,17 @@ meta {
 }
 
 put {
-  url: https://www.wikidata.org/w/rest.php/wikibase/v1/entities/items/Q4115189/descriptions/de
+  url: {{base-url}}/entities/items/{{sandbox-id}}/descriptions/en-us
   body: json
   auth: inherit
 }
 
 body:json {
   {
-    "description": "Spielwiese zum Testen von Funktionen. Fühle dich frei alles mögliche zu verändern. Füge aber bitte nur Links zu Benutzerseiten hinzu.",
+    "description": "This is a sandbox for testing changes to items. Please be gentle with it. Feel free to change anything on this page! For testing links, try adding ones to userpages.",
     "tags": [],
     "bot": false,
-    "comment": "replace German description"
+    "comment": "replace American English description"
   }
 }
 
