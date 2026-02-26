@@ -5,7 +5,7 @@ meta {
 }
 
 patch {
-  url: https://83140a6db8.catalyst.wmcloud.org/w/rest.php/wikibase/v1/entities/properties/P1/labels
+  url: {{edit-url}}/entities/properties/P15/labels
   body: json
   auth: inherit
 }
@@ -19,13 +19,13 @@ body:json {
     "patch": [
       {
         "op": "replace",
-        "path": "/en",
-        "value": "instance of"
+        "path": "/en-us",
+        "value": "Sandbox String"
       }
     ],
     "tags": [],
     "bot": false,
-    "comment": "replace English label"
+    "comment": "replace American English label"
   }
 }
 

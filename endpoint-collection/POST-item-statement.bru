@@ -5,7 +5,7 @@ meta {
 }
 
 post {
-  url: https://83140a6db8.catalyst.wmcloud.org/w/rest.php/wikibase/v1/entities/items/Q1/statements
+  url: {{base-url}}/entities/items/{{sandbox-id}}/statements
   body: json
   auth: inherit
 }
@@ -18,11 +18,11 @@ body:json {
   {
     "statement": {
       "property": {
-        "id": "P1"
+        "id": "P54"
       },
       "value": {
         "type": "value",
-        "content": "Q4"
+        "content": "Q213959"
       }
     },
     "tags": [],

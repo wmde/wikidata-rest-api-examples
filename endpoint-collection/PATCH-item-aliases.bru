@@ -5,7 +5,7 @@ meta {
 }
 
 patch {
-  url: https://83140a6db8.catalyst.wmcloud.org/w/rest.php/wikibase/v1/entities/items/Q4/aliases
+  url: {{base-url}}/entities/items/{{sandbox-id}}/aliases
   body: json
   auth: inherit
 }
@@ -20,12 +20,12 @@ body:json {
       {
         "op": "add",
         "path": "/en/-",
-        "value": "human being"
+        "value": "sandbox item"
       }
     ],
     "tags": [],
     "bot": false,
-    "comment": "Add English alias"
+    "comment": "Add American English alias"
   }
 }
 

@@ -5,7 +5,7 @@ meta {
 }
 
 post {
-  url: https://83140a6db8.catalyst.wmcloud.org/w/rest.php/wikibase/v1/entities/properties
+  url: {{edit-url}}/entities/properties
   body: json
   auth: inherit
 }
@@ -19,21 +19,14 @@ body:json {
     "property": {
       "data_type": "wikibase-item",
       "labels": {
-        "en": "instance of",
-        "ru": "это частный случай понятия"
+        "en": "described by source"
       },
       "descriptions": {
-        "en": "the subject is a concrete object (instance) of this class, category, or object group",
-        "ru": "данный элемент представляет собой конкретный объект (экземпляр / частный случай) класса, категории"
+        "en": "work where this item is described, in statistical contexts, a methodological note describing the data"
       },
       "aliases": {
         "en": [
-          "is a",
-          "is an"
-        ],
-        "ru": [
-          "представляет собой",
-          "является"
+          "discussed in"
         ]
       }
     }
