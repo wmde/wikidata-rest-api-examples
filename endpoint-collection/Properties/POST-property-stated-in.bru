@@ -5,7 +5,7 @@ meta {
 }
 
 post {
-  url: https://83140a6db8.catalyst.wmcloud.org/w/rest.php/wikibase/v1/entities/properties
+  url: {{edit-url}}/entities/properties
   body: json
   auth: inherit
 }
@@ -19,14 +19,14 @@ body:json {
     "property": {
       "data_type": "wikibase-item",
       "labels": {
-        "en": "stated in"
+        "en": "inception"
       },
       "descriptions": {
-        "en": "to be used in the references field to refer to the information document or database in which a claim is made"
+        "en": "time when an entity begins to exist"
       },
       "aliases": {
         "en": [
-          "originating source"
+          "created"
         ]
       }
     }

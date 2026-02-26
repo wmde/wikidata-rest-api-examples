@@ -5,7 +5,7 @@ meta {
 }
 
 patch {
-  url: https://83140a6db8.catalyst.wmcloud.org/w/rest.php/wikibase/v1/entities/properties/P1/descriptions
+  url: {{edit-url}}/entities/properties/P15/descriptions
   body: json
   auth: inherit
 }
@@ -19,13 +19,13 @@ body:json {
     "patch": [
       {
         "op": "replace",
-        "path": "/en",
-        "value": "the subject is a concrete object (instance) of this class, category, or object group"
+        "path": "/en-us",
+        "value": "A generic string Property to be used for general testing"
       }
     ],
     "tags": [],
     "bot": false,
-    "comment": "update English description"
+    "comment": "update American English description"
   }
 }
 
