@@ -1,11 +1,11 @@
 meta {
-  name: PATCH-property-label
+  name: Replace English Label of Property
   type: http
   seq: 23
 }
 
 patch {
-  url: {{edit-url}}/entities/properties/P15/labels
+  url: {{base-url}}/entities/properties/{{property-id}}/labels
   body: json
   auth: inherit
 }
@@ -19,13 +19,13 @@ body:json {
     "patch": [
       {
         "op": "replace",
-        "path": "/en-us",
-        "value": "Sandbox String"
+        "path": "/en",
+        "value": "Sandbox string"
       }
     ],
     "tags": [],
     "bot": false,
-    "comment": "replace American English label"
+    "comment": "replace English label"
   }
 }
 

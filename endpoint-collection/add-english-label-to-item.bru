@@ -1,0 +1,25 @@
+meta {
+  name: Add English Label to Item
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{base-url}}/entities/items/{{sandbox-id}}/labels/en-us
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "label": "Wikidata Sandbox",
+    "tags": [],
+    "bot": false,
+    "comment": "Add American English label"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

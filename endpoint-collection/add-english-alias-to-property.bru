@@ -1,11 +1,11 @@
 meta {
-  name: PATCH-item-aliases
+  name: Add English Alias to Property
   type: http
-  seq: 26
+  seq: 27
 }
 
 patch {
-  url: {{base-url}}/entities/items/{{sandbox-id}}/aliases
+  url: {{base-url}}/entities/properties/{{property-id}}/aliases
   body: json
   auth: inherit
 }
@@ -20,12 +20,12 @@ body:json {
       {
         "op": "add",
         "path": "/en/-",
-        "value": "sandbox item"
+        "value": "sandbox property"
       }
     ],
     "tags": [],
     "bot": false,
-    "comment": "Add American English alias"
+    "comment": "Add English alias"
   }
 }
 

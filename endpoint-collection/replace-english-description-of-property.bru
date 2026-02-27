@@ -1,11 +1,11 @@
 meta {
-  name: PATCH-property-description
+  name: Replace English Description of Property
   type: http
   seq: 25
 }
 
 patch {
-  url: {{edit-url}}/entities/properties/P15/descriptions
+  url: {{base-url}}/entities/properties/{{property-id}}/descriptions
   body: json
   auth: inherit
 }
@@ -19,13 +19,13 @@ body:json {
     "patch": [
       {
         "op": "replace",
-        "path": "/en-us",
+        "path": "/en",
         "value": "A generic string Property to be used for general testing"
       }
     ],
     "tags": [],
     "bot": false,
-    "comment": "update American English description"
+    "comment": "update English description"
   }
 }
 

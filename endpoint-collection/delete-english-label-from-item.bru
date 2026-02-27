@@ -1,11 +1,11 @@
 meta {
-  name: DELETE-item-label
+  name: Delete English Label from Item
   type: http
   seq: 19
 }
 
 delete {
-  url: {{base-url}}/entities/items/{{sandbox-id}}/labels/pdc
+  url: {{base-url}}/entities/items/{{sandbox-id}}/labels/en-us
   body: json
   auth: inherit
 }
@@ -14,7 +14,7 @@ body:json {
   {
     "tags": [],
     "bot": false,
-    "comment": "Delete label"
+    "comment": "Delete American English label"
   }
 }
 

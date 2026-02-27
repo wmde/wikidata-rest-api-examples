@@ -1,11 +1,11 @@
 meta {
-  name: GET-property
+  name: Read Sitelinks of Item
   type: http
-  seq: 8
+  seq: 16
 }
 
 get {
-  url: {{base-url}}/entities/properties/{{property-id}}
+  url: {{base-url}}/entities/items/{{item-id}}/sitelinks
   body: none
   auth: inherit
 }

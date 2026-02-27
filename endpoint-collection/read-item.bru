@@ -1,11 +1,11 @@
 meta {
-  name: GET-property-labels
+  name: Read Item
   type: http
-  seq: 20
+  seq: 6
 }
 
 get {
-  url: {{base-url}}/entities/properties/{{property-id}}/labels
+  url: {{base-url}}/entities/items/{{item-id}}
   body: none
   auth: inherit
 }

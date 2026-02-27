@@ -1,11 +1,11 @@
 meta {
-  name: GET-item-sitelinks
+  name: Read Aliases of Item
   type: http
-  seq: 16
+  seq: 1
 }
 
 get {
-  url: {{base-url}}/entities/items/{{item-id}}/sitelinks
+  url: {{base-url}}/entities/items/{{item-id}}/aliases
   body: none
   auth: inherit
 }

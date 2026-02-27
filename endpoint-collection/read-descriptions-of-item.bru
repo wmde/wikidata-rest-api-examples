@@ -1,11 +1,11 @@
 meta {
-  name: GET-en-label
+  name: Read Descriptions of Item
   type: http
-  seq: 5
+  seq: 2
 }
 
 get {
-  url: {{base-url}}/entities/items/{{item-id}}/labels/en
+  url: {{base-url}}/entities/items/{{item-id}}/descriptions
   body: none
   auth: inherit
 }
