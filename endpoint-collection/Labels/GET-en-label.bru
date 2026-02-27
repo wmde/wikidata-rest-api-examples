@@ -1,0 +1,16 @@
+meta {
+  name: GET-en-label
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{base-url}}/entities/items/{{item-id}}/labels/en
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

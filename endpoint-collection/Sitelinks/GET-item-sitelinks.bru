@@ -1,0 +1,16 @@
+meta {
+  name: GET-item-sitelinks
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{base-url}}/entities/items/{{item-id}}/sitelinks
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

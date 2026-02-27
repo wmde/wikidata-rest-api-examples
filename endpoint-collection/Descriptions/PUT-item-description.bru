@@ -1,0 +1,25 @@
+meta {
+  name: PUT-item-description
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{base-url}}/entities/items/{{sandbox-id}}/descriptions/en-us
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "description": "This is a sandbox for testing changes to items. Please be gentle with it. Feel free to change anything on this page! For testing links, try adding ones to userpages.",
+    "tags": [],
+    "bot": false,
+    "comment": "replace American English description"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

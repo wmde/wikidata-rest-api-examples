@@ -1,0 +1,39 @@
+meta {
+  name: POST-property
+  type: http
+  seq: 27
+}
+
+post {
+  url: {{edit-url}}/entities/properties
+  body: json
+  auth: inherit
+}
+
+headers {
+  Cookie: wiki_83140a6db8__mainUserName=Patch%20Demo; wiki_83140a6db8__main_session=ag0fftuehmhvbk1hhurnenb40kdjr2je; wiki_83140a6db8__mainUserID=2
+}
+
+body:json {
+  {
+    "property": {
+      "data_type": "wikibase-item",
+      "labels": {
+        "en": "described by source"
+      },
+      "descriptions": {
+        "en": "work where this item is described, in statistical contexts, a methodological note describing the data"
+      },
+      "aliases": {
+        "en": [
+          "discussed in"
+        ]
+      }
+    }
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
