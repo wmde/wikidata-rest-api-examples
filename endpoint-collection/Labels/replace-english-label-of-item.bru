@@ -1,0 +1,31 @@
+meta {
+  name: Replace English Label of Item
+  type: http
+  seq: 7
+}
+
+patch {
+  url: {{base-url}}/entities/items/{{sandbox-id}}/labels
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "patch": [
+      {
+        "op": "replace",
+        "path": "/en",
+        "value": "Wikidata Sandbox"
+      }
+    ],
+    "tags": [],
+    "bot": false,
+    "comment": "replace English label"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

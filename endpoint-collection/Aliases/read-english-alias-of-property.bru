@@ -1,0 +1,16 @@
+meta {
+  name: Read English Alias of Property
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{base-url}}/entities/properties/{{property-id}}/aliases/en
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

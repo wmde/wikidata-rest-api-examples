@@ -1,0 +1,31 @@
+meta {
+  name: Change Item Label
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{edit-url}}/entities/items/{{sandbox-id}}
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "patch": [
+      {
+        "op": "replace",
+        "path": "/labels/en",
+        "value": "Wikidata Sandbox"
+      }
+    ],
+    "tags": [],
+    "bot": false,
+    "comment": "Update the English label"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
