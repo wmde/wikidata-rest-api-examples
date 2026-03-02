@@ -1,11 +1,11 @@
 meta {
-  name: Replace English Description of Property
+  name: Replace English Label of Property
   type: http
-  seq: 20
+  seq: 15
 }
 
 patch {
-  url: {{base-url}}/entities/properties/{{property-id}}/descriptions
+  url: {{base-url}}/entities/properties/{{property-id}}/labels
   body: json
   auth: inherit
 }
@@ -20,12 +20,12 @@ body:json {
       {
         "op": "replace",
         "path": "/en",
-        "value": "A generic string Property to be used for general testing"
+        "value": "Sandbox string"
       }
     ],
     "tags": [],
     "bot": false,
-    "comment": "update English description"
+    "comment": "replace English label"
   }
 }
 

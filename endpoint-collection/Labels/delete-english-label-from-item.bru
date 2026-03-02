@@ -1,10 +1,10 @@
 meta {
-  name: Add English Label to Item
+  name: Delete English Label from Item
   type: http
-  seq: 3
+  seq: 10
 }
 
-put {
+delete {
   url: {{base-url}}/entities/items/{{sandbox-id}}/labels/en-us
   body: json
   auth: inherit
@@ -12,10 +12,9 @@ put {
 
 body:json {
   {
-    "label": "Wikidata Sandbox",
     "tags": [],
     "bot": false,
-    "comment": "Add American English label"
+    "comment": "Delete American English label"
   }
 }
 
