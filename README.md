@@ -10,7 +10,7 @@ In the `endpoint-collection` directory you will find folders that contain the in
 ### First steps
 1. Download [Bruno](https://www.usebruno.com/downloads).
 2. Clone this repository: `git clone https://github.com/wmde/wikidata-rest-api-examples`
-3. In Bruno, click "Import collection" and select your local `endpoint-collection` directory.
+3. In Bruno, click "Open collection" and select your local `endpoint-collection` directory.
 4. In the top right corner choose an environment to work in. This can be adjusted at any point.
 > When trying out the REST API, use the Wikidata environment for fetching. You can also use this environment to edit the sandbox item, which is defined in a variable of the same name. When creating and deleting items, use the Beta Wikidata environment.
 5. Select individual requests and execute the request by clicking the arrow or pressing Ctrl + Enter.
